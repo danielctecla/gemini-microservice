@@ -107,7 +107,7 @@ def getRecomendationsSpends(app):
             '''
 
             # Inicializar el modelo generativo
-            model = genai.GenerativeModel("gemini-1.5-pro-latest", system_instruction=systemInstruction)
+            model = genai.GenerativeModel("gemini-1.5-flash-latest", system_instruction=systemInstruction)
 
             # Generar el contenido
             response = model.generate_content(
